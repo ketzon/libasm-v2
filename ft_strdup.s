@@ -4,7 +4,6 @@ extern malloc
 extern ft_strlen
 extern ft_strcpy
 
-; version sans push and pop (plus rapide)
 ft_strdup:
     call    ft_strlen
     inc rax

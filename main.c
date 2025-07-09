@@ -116,6 +116,7 @@ void printRead() {
     printf(WHT "\n====TEST WITH A BAD FILE DESCRIPTOR====\n" END);
     int res2 = ft_read(-1, buf, sizeof(buf) - 1);  
     if (res2 == -1) {
+        printf("resultat: %d\n", res2);
         printf("Erreur ft_read: %s\n", strerror(errno));
     } else {
         buf[res2] = '\0';  
@@ -125,6 +126,7 @@ void printRead() {
     /* printf(WHT "\n====TEST WITH STDIN====\n" END); */
     /* int res3 = ft_read(0, buf, sizeof(buf) - 1); */  
     /* if (res3 == -1) { */
+        /* printf("resultat: %d\n", res3); */
     /*     printf("Erreur ft_read: %s\n", strerror(errno)); */
     /* } else { */
     /*     buf[res3] = '\0'; */  
