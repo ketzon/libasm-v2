@@ -15,33 +15,6 @@
 ;     return dest;
 ; }
 
-
-; ==== ft_strcpy in assembly ====
-; section .text
-; global ft_strcpy
-; ft_strcpy:
-;     mov rbx, rdi
-; copy_loop:
-;     mov al, [rsi]
-;     mov [rdi], al
-;     inc rdi
-;     inc rsi
-;     test al, al
-;     jnz copy_loop
-;     mov rax, rbx
-;     ret
-
-; ft_strcpy:
-;     mov rax, rdi        
-; copy_loop:
-;     mov dl, [rsi]      
-;     mov [rdi], dl     
-;     inc rsi
-;     inc rdi
-;     test dl, dl
-;     jnz copy_loop
-;     ret
-
 section .text
 global ft_strcpy
 ft_strcpy:

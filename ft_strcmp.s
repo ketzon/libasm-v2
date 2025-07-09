@@ -36,25 +36,3 @@ not_equal:
 equal:
     xor eax,eax ;met a zero de la maniere la plus fast possible
     ret
-
-
-; ft_strcmp:
-; loop:
-;     mov al, [rdi]
-;     mov bl, [rsi]
-;     cmp al, bl
-;     jnz not_equal
-;     test al,al
-;     jz equal
-;     inc rdi
-;     inc rsi
-;     jmp loop
-
-; not_equal:
-;     movzx eax, al
-;     movzx ebx, bl
-;     sub eax,ebx
-;     ret
-; equal:
-;     xor eax,eax
-;     ret
