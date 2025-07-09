@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/florian/after-common-core/libasm/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+$(NAME)	Makefile	/^$(NAME): $(ASM_OBJS)$/;"	t
+$(TEST)	Makefile	/^$(TEST): $(NAME) $(C_OBJS)$/;"	t
+${NAME}	c_test/Makefile	/^${NAME}: ${OBJS} $/;"	t
+%.o	Makefile	/^%.o: %.c$/;"	t
+%.o	Makefile	/^%.o: %.s$/;"	t
+.c.o	c_test/Makefile	/^.c.o:$/;"	t
+ASM	Makefile	/^ASM = nasm$/;"	m
+ASMFLAGS	Makefile	/^ASMFLAGS = -f elf64$/;"	m
+ASM_OBJS	Makefile	/^ASM_OBJS = $(ASM_SRCS:.s=.o)$/;"	m
+ASM_SRCS	Makefile	/^ASM_SRCS = ft_strlen.s ft_strcpy.s  ft_strcmp.s ft_write.s  ft_read.s ft_strdup.s $/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CC	c_test/Makefile	/^CC= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Wextra -Werror -g$/;"	m
+CFLAGS	c_test/Makefile	/^CFLAGS= -Wall -Werror -Wextra -g$/;"	m
+C_OBJS	Makefile	/^C_OBJS = $(C_SRCS:.c=.o)$/;"	m
+C_SRCS	Makefile	/^C_SRCS = main.c$/;"	m
+HEADER_H	c_test/header.h	/^#define HEADER_H$/;"	d
+HUGE_STRING	libasm.h	/^#define HUGE_STRING /;"	d
+LDFLAGS	Makefile	/^LDFLAGS = -z noexecstack$/;"	m
+LIBASM_H	libasm.h	/^# define LIBASM_H$/;"	d
+NAME	Makefile	/^NAME = libasm.a$/;"	m
+NAME	c_test/Makefile	/^NAME= a.out$/;"	m
+OBJS	c_test/Makefile	/^OBJS = ${SRCS:.c=.o}$/;"	m
+RM	c_test/Makefile	/^RM = rm -rf$/;"	m
+SRCS	c_test/Makefile	/^SRCS= fonction\/ft_strcpy.c fonction\/ft_strcmp.c main.c fonction\/ft_strdup.c$/;"	m
+TEST	Makefile	/^TEST = test$/;"	m
+all	Makefile	/^all: $(NAME)$/;"	t
+all	c_test/Makefile	/^all: ${NAME}$/;"	t
+clean	Makefile	/^clean:$/;"	t
+clean	c_test/Makefile	/^clean:$/;"	t
+equal	ft_strcmp.s	/^equal:$/;"	l
+errno	c_test/main.c	/^int errno;$/;"	v	typeref:typename:int
+errno	main.c	/^int errno;$/;"	v	typeref:typename:int
+error	ft_read.s	/^error:$/;"	l
+error	ft_strdup.s	/^error:$/;"	l
+error	ft_write.s	/^error:$/;"	l
+extern	ft_read.s	/^extern __errno_location$/;"	l
+extern	ft_strdup.s	/^extern ft_strcpy$/;"	l
+extern	ft_strdup.s	/^extern ft_strlen$/;"	l
+extern	ft_strdup.s	/^extern malloc$/;"	l
+extern	ft_write.s	/^extern __errno_location$/;"	l
+fclean	Makefile	/^fclean: clean$/;"	t
+fclean	c_test/Makefile	/^fclean: clean$/;"	t
+ft_read	ft_read.s	/^ft_read:$/;"	l
+ft_strcmp	c_test/fonction/ft_strcmp.c	/^int ft_strcmp(const char *s1, const char *s2){$/;"	f	typeref:typename:int
+ft_strcmp	ft_strcmp.s	/^ft_strcmp:$/;"	l
+ft_strcpy	c_test/fonction/ft_strcpy.c	/^char *ft_strcpy(char *dest, const char *src)$/;"	f	typeref:typename:char *
+ft_strcpy	ft_strcpy.s	/^ft_strcpy:$/;"	l
+ft_strdup	c_test/fonction/ft_strdup.c	/^char *ft_strdup(const char *src){$/;"	f	typeref:typename:char *
+ft_strdup	ft_strdup.s	/^ft_strdup:$/;"	l
+ft_strlen	ft_strlen.s	/^ft_strlen:$/;"	l
+ft_write	ft_write.s	/^ft_write:$/;"	l
+global	ft_read.s	/^global ft_read$/;"	l
+global	ft_strcmp.s	/^global ft_strcmp ;hello ;hello$/;"	l
+global	ft_strcpy.s	/^global ft_strcpy$/;"	l
+global	ft_strdup.s	/^global ft_strdup$/;"	l
+global	ft_strlen.s	/^global ft_strlen        ; permet d'utiliser strlen dans un code C (c'est un export)$/;"	l
+global	ft_write.s	/^global ft_write$/;"	l
+loop	ft_strcmp.s	/^loop:$/;"	l
+loop	ft_strcpy.s	/^loop:$/;"	l
+loop	ft_strlen.s	/^.loop:$/;"	l
+main	c_test/main.c	/^int main(void){$/;"	f	typeref:typename:int
+main	main.c	/^int main() {$/;"	f	typeref:typename:int
+not_equal	ft_strcmp.s	/^not_equal:$/;"	l
+printRead	main.c	/^void printRead() {$/;"	f	typeref:typename:void
+printStrcmp	main.c	/^void printStrcmp() {$/;"	f	typeref:typename:void
+printStrcpy	main.c	/^void printStrcpy(){$/;"	f	typeref:typename:void
+printStrdup	main.c	/^void printStrdup() {$/;"	f	typeref:typename:void
+printStrlen	main.c	/^void printStrlen(){$/;"	f	typeref:typename:void
+printWrite	main.c	/^void printWrite(){$/;"	f	typeref:typename:void
+re	Makefile	/^re: fclean all$/;"	t
+re	c_test/Makefile	/^re: fclean all$/;"	t
+test_strcmp	c_test/main.c	/^void test_strcmp() {$/;"	f	typeref:typename:void
+test_strcpy	c_test/main.c	/^void test_strcpy(){$/;"	f	typeref:typename:void
+test_strdup	c_test/main.c	/^void test_strdup() {$/;"	f	typeref:typename:void
